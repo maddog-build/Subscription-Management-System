@@ -1,0 +1,3 @@
+import PageHeader from "../../components/common/PageHeader";
+import EmptyState from "../../components/common/EmptyState";
+export default function Subscriptions(){return <><PageHeader title="Subscriptions" description="Track active, paused and cancelled subscriptions."/><section className="panel table-panel"><div className="panel-heading"><h2>All subscriptions</h2><select><option>All statuses</option><option>Active</option><option>Paused</option><option>Cancelled</option></select></div><EmptyState title="No connected subscriptions yet" description="Connect the subscriptions API to display records."/></section></>}

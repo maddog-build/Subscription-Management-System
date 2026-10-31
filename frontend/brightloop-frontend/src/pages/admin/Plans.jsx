@@ -1,0 +1,3 @@
+import PageHeader from "../../components/common/PageHeader";
+import { plans } from "../../services/demoData";
+export default function Plans(){return <><PageHeader title="Subscription plans" description="Manage pricing and billing cycles."/><div className="plans-grid">{plans.map(p=><article className="plan-card" key={p.id}><span className="eyebrow">BRIGHTLOOP PLAN</span><h2>{p.name}</h2><p className="muted">{p.description}</p><div className="plan-price">₹{p.price.toLocaleString("en-IN")}<span> / {p.cycle}</span></div><ul>{p.features.map(f=><li key={f}>{f}</li>)}</ul><button className="secondary-button full-button" onClick={()=>alert("Connect plan editing to the backend.")}>Manage plan</button></article>)}</div></>}

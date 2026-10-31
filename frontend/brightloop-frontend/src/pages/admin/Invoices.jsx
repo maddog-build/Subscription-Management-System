@@ -1,0 +1,3 @@
+import PageHeader from "../../components/common/PageHeader";
+import EmptyState from "../../components/common/EmptyState";
+export default function Invoices(){return <><PageHeader title="Invoices" description="Review billing documents and outstanding balances."/><section className="panel table-panel"><div className="panel-heading"><h2>Invoice register</h2><select><option>All invoices</option><option>Paid</option><option>Pending</option><option>Overdue</option></select></div><EmptyState title="Invoice records will appear here" description="Connect GET /invoices to show real billing data."/></section></>}
